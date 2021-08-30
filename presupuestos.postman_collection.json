@@ -1,0 +1,793 @@
+{
+	"info": {
+		"_postman_id": "786f5873-8e54-40c3-be97-718a725a0d54",
+		"name": "presupuestos",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "PROYECTO NUEVO",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "fecha",
+							"value": "AGOSTO",
+							"type": "text"
+						},
+						{
+							"key": "proyecto",
+							"value": "prueba proyecto",
+							"type": "text"
+						},
+						{
+							"key": "version",
+							"value": "1.0",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/nuevoproyecto",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"nuevoproyecto"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "concepto ingresos",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "concepto",
+							"value": "prueba 003",
+							"type": "text"
+						},
+						{
+							"key": "tabla",
+							"value": "concepto_ingresos",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/nuevoConcepto",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"nuevoConcepto"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "concepto costosDirectos",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "concepto",
+							"value": "prueba002",
+							"type": "text"
+						},
+						{
+							"key": "tabla",
+							"value": "concepto_costos_directos",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/nuevoConcepto",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"nuevoConcepto"
+					],
+					"query": [
+						{
+							"key": "concepto",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "concepto gastos admon",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "concepto",
+							"value": "prueba 001",
+							"type": "text"
+						},
+						{
+							"key": "tabla",
+							"value": "concepto_gastos_admon",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/nuevoConcepto",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"nuevoConcepto"
+					],
+					"query": [
+						{
+							"key": "concepto",
+							"value": "prueba Gastos Admon",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "concepto recursos",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "concepto",
+							"value": "prueba001",
+							"type": "text"
+						},
+						{
+							"key": "tabla",
+							"value": "concepto_recursos",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/nuevoConcepto",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"nuevoConcepto"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "OBTENER PROYECTOS",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "tabla",
+							"value": "presupuestos",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/mostrar",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"mostrar"
+					],
+					"query": [
+						{
+							"key": "tabla",
+							"value": "proyectos",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Obtener ingresos",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "tabla",
+							"value": "concepto_ingresos",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/mostrar",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"mostrar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Obtener costos directos",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "tabla",
+							"value": "concepto_costos_directos",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/mostrar",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"mostrar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Obtener gastos admon",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "tabla",
+							"value": "concepto_gastos_admon",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/mostrar",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"mostrar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Obtener recursos",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "tabla",
+							"value": "concepto_recursos",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/mostrar",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"mostrar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Borrar ingresos",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "concepto",
+							"value": "prueba Borrar ingreso",
+							"type": "text"
+						},
+						{
+							"key": "tabla",
+							"value": "concepto_ingresos",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/borrar",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"borrar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Borrar costos Directos",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "concepto",
+							"value": "prueba001",
+							"type": "text"
+						},
+						{
+							"key": "tabla",
+							"value": "concepto_costos_directos",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/borrar",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"borrar"
+					],
+					"query": [
+						{
+							"key": "concepto",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Borrar gastos Admon",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "concepto",
+							"value": "prueba 001",
+							"type": "text"
+						},
+						{
+							"key": "tabla",
+							"value": "concepto_gastos_admon",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/borrar",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"borrar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "borrar recursos",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "concepto",
+							"value": "prueba Borrar  Recursos",
+							"type": "text"
+						},
+						{
+							"key": "tabla",
+							"value": "concepto_recursos",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/borrar",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"borrar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Monto Ingresos",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "concepto",
+							"value": "prueba 002",
+							"type": "text"
+						},
+						{
+							"key": "proyecto",
+							"value": "prueba proyecto",
+							"type": "text"
+						},
+						{
+							"key": "fecha",
+							"value": "AGOSTO",
+							"type": "text"
+						},
+						{
+							"key": "monto",
+							"value": "125.3",
+							"type": "text"
+						},
+						{
+							"key": "tabla",
+							"value": "ingresos",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/monto",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"monto"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Monto Costos directos",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "concepto",
+							"value": "prueba002",
+							"type": "text"
+						},
+						{
+							"key": "proyecto",
+							"value": "prueba proyecto",
+							"type": "text"
+						},
+						{
+							"key": "fecha",
+							"value": "AGOSTO",
+							"type": "text"
+						},
+						{
+							"key": "monto",
+							"value": "3569.03",
+							"type": "text"
+						},
+						{
+							"key": "tabla",
+							"value": "costos_directos",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/monto",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"monto"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Monto gastos admon",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "concepto",
+							"value": "prueba 001",
+							"type": "text"
+						},
+						{
+							"key": "proyecto",
+							"value": "prueba proyecto",
+							"type": "text"
+						},
+						{
+							"key": "fecha",
+							"value": "AGOSTO",
+							"type": "text"
+						},
+						{
+							"key": "monto",
+							"value": "200.54",
+							"type": "text"
+						},
+						{
+							"key": "tabla",
+							"value": "gastos_admon",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/monto",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"monto"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Monto recursos",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "concepto",
+							"value": "prueba001",
+							"type": "text"
+						},
+						{
+							"key": "proyecto",
+							"value": "prueba proyecto",
+							"type": "text"
+						},
+						{
+							"key": "fecha",
+							"value": "AGOSTO",
+							"type": "text"
+						},
+						{
+							"key": "monto",
+							"value": "500.20",
+							"type": "text"
+						},
+						{
+							"key": "porcentaje",
+							"value": "0.5",
+							"type": "text"
+						},
+						{
+							"key": "tabla",
+							"value": "recursos",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/monto",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"monto"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "INGRESOS",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "tabla",
+							"value": "ingresos",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/mostrar",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"mostrar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "costos directos",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "tabla",
+							"value": "costos_directos",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/mostrar",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"mostrar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "gastos admon",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "tabla",
+							"value": "gastos_admon",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/mostrar",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"mostrar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "RECURSOS",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "tabla",
+							"value": "recursos",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/mostrar",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"mostrar"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
